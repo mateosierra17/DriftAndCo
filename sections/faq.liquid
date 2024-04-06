@@ -10,6 +10,17 @@
     </div>
   </section>
 {% endfor %}
+<script>
+  const QBlocks = document.querySelectorAll(".q-block")
+  QBlocks.forEach((block) => {
+      block.addEventListener("click", (event) => {
+          let target = event.target.closest('.q-block')
+          console.log(target)
+          target.classList.toggle("q-block--active")
+      })
+  
+  })
+</script>
 
 {% schema %}
   {
