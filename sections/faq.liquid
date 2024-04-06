@@ -1,8 +1,14 @@
 <h1>{{ section.settings.headline }}</h1>
 
 {% for block in section.blocks %}
-  <h3>{{ block.settings.question }}</h3>
-  <h4>{{ block.settings.answer }}</h4>
+  <section class="q-block">
+    <div class="q-block__question">
+      <h1>{{ block.settings.question }}</h1>
+    </div>
+    <div class="q-block__answer">
+      <h1>{{ block.settings.answer }}</h1>
+    </div>
+  </section>
 {% endfor %}
 
 {% schema %}

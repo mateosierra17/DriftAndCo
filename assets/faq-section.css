@@ -1,0 +1,24 @@
+.q-block{
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+}
+
+.q-block__question , .q-block__answer{
+    margin: 0;
+    padding: 2rem 0rem;
+    & >*{
+        margin: 0;
+    }
+    
+}
+
+.q-block .q-block__answer {
+    display: none;
+}
+
+
+.q-block--active .q-block__answer {
+    display: unset;
+}
+
