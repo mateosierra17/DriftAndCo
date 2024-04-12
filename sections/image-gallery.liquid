@@ -1,0 +1,36 @@
+<h1>image gallery</h1>
+
+{% schema %}
+  {
+    "name": "image gallery",
+    "tag": "section",
+    "class": "image-gallery",
+    "settings": [
+      {
+        "type": "text",
+        "label": "section's heading",
+        "id": "heading",
+        "default": "heading"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "image",
+        "type": "image",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "image text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "image-gallery"
+      }
+    ]
+
+  }
+{% endschema %}
