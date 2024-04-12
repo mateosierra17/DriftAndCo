@@ -1,5 +1,57 @@
 {
   "sections": {
+    "image_gallery_MiwHz6": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_QPnMgW": {
+          "type": "image",
+          "settings": {
+            "text": "something"
+          }
+        },
+        "image_iawzQf": {
+          "type": "image",
+          "settings": {
+            "text": "another thing"
+          }
+        },
+        "image_zEBKXX": {
+          "type": "image",
+          "settings": {
+            "text": "something else"
+          }
+        },
+        "image_pdFYnT": {
+          "type": "image",
+          "settings": {
+            "text": "second"
+          }
+        },
+        "image_j9J7hr": {
+          "type": "image",
+          "settings": {
+            "text": "second second"
+          }
+        },
+        "image_Hx3zrY": {
+          "type": "image",
+          "settings": {
+            "text": "second after the second second"
+          }
+        }
+      },
+      "block_order": [
+        "image_QPnMgW",
+        "image_iawzQf",
+        "image_zEBKXX",
+        "image_pdFYnT",
+        "image_j9J7hr",
+        "image_Hx3zrY"
+      ],
+      "settings": {
+        "heading": "heading"
+      }
+    },
     "faq_4bMqzb": {
       "type": "faq",
       "blocks": {
@@ -210,6 +262,7 @@
     }
   },
   "order": [
+    "image_gallery_MiwHz6",
     "faq_4bMqzb",
     "marquee_JMte6K",
     "image_banner",
