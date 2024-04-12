@@ -1,0 +1,66 @@
+{{ 'faq-section.css' | asset_url | stylesheet_tag }}
+
+<h1>{{ section.settings.headline }}</h1>
+
+{% for block in section.blocks %}
+  <section class="q-block">
+    <div class="q-block__question">
+      <h1>{{ block.settings.question }}</h1>
+    </div>
+    <div class="q-block__answer">
+      <h1>{{ block.settings.answer }}</h1>
+    </div>
+  </section>
+{% endfor %}
+<script>
+  const QBlocks = document.querySelectorAll(".q-block")
+  QBlocks.forEach((block) => {
+      block.addEventListener("click", (event) => {
+          let target = event.target.closest('.q-block')
+          console.log(target)
+          target.classList.toggle("q-block--active")
+      })
+  
+  })
+</script>
+
+{% schema %}
+  {
+    "name": "faq",
+    "tag": "section",
+    "class": "faq",
+    "presets": [
+      {
+        "name": "FAQ"
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Headline",
+        "default": "this is the headline"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "question",
+        "type": "question",
+        "settings": [
+          {
+            "label": "question",
+            "id": "question",
+            "type": "text",
+            "default": "marco?"
+          },
+          {
+            "label": "answer",
+            "id": "answer",
+            "type": "text",
+            "default": "polo"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
