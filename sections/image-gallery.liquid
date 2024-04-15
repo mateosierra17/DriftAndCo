@@ -1,19 +1,31 @@
 {{ 'image-gallery.css' | asset_url | stylesheet_tag }}
 
-<h1 class="section-heading">{{ section.settings.heading }}</h1>
+{% assign settings = section.settings %}
 
-<span class="pictures-container">
+<h1 class="image-gallery__heading 
+  text-{{settings.headingOrientation}} ">
+  {{ section.settings.heading }}
+</h1>
+
+<span class="image-gallery__pictures-container">
+
   {% for block in section.blocks %}
-    <img
-      class="pictures-container__picture"
-      src="https://images.unsplash.com/photo-1712675009273-5a6c46663fbb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      width="400px"
-      height="auto"
-      alt="">
-    <h2>{{ collections[block.settings.collection].title }}</h2>
+    {% assign collection = collections[block.settings.collection] %}
+    <a href={{collection.url}}>
+      <div class="image-gallery__image">
+        <img
+          class="pictures-container__picture"
+          src={{collection.image | image_url}}
+          loading="{{settings.imageLoad}}"
+          width="400px"
+          height="auto"
+          alt="">
+        <h2 class="image-gallery__collection-name">{{ collection.title }}</h2>
+      </div>\
+    </a>
+
   {% endfor %}
 </span>
-
 
 {% schema %}
   {
@@ -26,7 +38,28 @@
         "label": "section's heading",
         "id": "heading",
         "default": "heading"
+      },
+      {
+        "type": "select",
+        "label": "heading's text orientation",
+        "id": "headingOrientation",
+        "default": "center",
+        "options": [
+          {
+            "value": "start",
+            "label": "Start"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "end",
+            "label": "End"
+          }
+        ]
       }
+
     ],
     "blocks": [
       {
@@ -42,6 +75,22 @@
             "type": "collection",
             "id": "collection",
             "label": "Collection"
+          },
+          {
+            "id": "imageLoad",
+            "type": "select",
+            "label": "Select",
+            "options": [
+              {
+                "value": "lazy",
+                "label": "Lazy"
+              },
+              {
+                "value": "eager",
+                "label": "Eager"
+              }
+            ],
+            "default": "lazy"
           }
         ]
       }
