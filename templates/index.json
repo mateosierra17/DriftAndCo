@@ -1,85 +1,5 @@
 {
   "sections": {
-    "image_gallery_MiwHz6": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_QPnMgW": {
-          "type": "image",
-          "settings": {
-            "text": "something",
-            "collection": "skin-protection"
-          }
-        },
-        "image_iawzQf": {
-          "type": "image",
-          "settings": {
-            "text": "another thing",
-            "collection": "2024-womens-swimwear"
-          }
-        },
-        "image_zEBKXX": {
-          "type": "image",
-          "settings": {
-            "text": "something else",
-            "collection": "footwear"
-          }
-        },
-        "image_rgiGrY": {
-          "type": "image",
-          "settings": {
-            "text": "",
-            "collection": "surf-boards"
-          }
-        }
-      },
-      "block_order": [
-        "image_QPnMgW",
-        "image_iawzQf",
-        "image_zEBKXX",
-        "image_rgiGrY"
-      ],
-      "settings": {
-        "heading": "heading"
-      }
-    },
-    "faq_4bMqzb": {
-      "type": "faq",
-      "blocks": {
-        "question_wXTxj3": {
-          "type": "question",
-          "settings": {
-            "question": "do we sheep wuorld wide?",
-            "answer": "maybe."
-          }
-        },
-        "question_XKNNbt": {
-          "type": "question",
-          "settings": {
-            "question": "where is the bat room?",
-            "answer": "what???"
-          }
-        }
-      },
-      "block_order": [
-        "question_wXTxj3",
-        "question_XKNNbt"
-      ],
-      "settings": {
-        "headline": "FAQ"
-      }
-    },
-    "marquee_JMte6K": {
-      "type": "marquee",
-      "settings": {
-        "headline": "great deals incoming🔥",
-        "textColor": "#000000",
-        "bgColor": "#ffffff",
-        "padding": 1,
-        "borderColor": "#000000",
-        "borderSize": 5,
-        "animationDuration": 15
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -127,10 +47,91 @@
         "show_text_below": false
       }
     },
+    "marquee_JMte6K": {
+      "type": "marquee",
+      "settings": {
+        "headline": "great deals incoming🔥",
+        "textColor": "#000000",
+        "bgColor": "#ffffff",
+        "padding": 1,
+        "borderColor": "#000000",
+        "borderSize": 5,
+        "animationDuration": 15
+      }
+    },
+    "image_gallery_MiwHz6": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_QPnMgW": {
+          "type": "image",
+          "settings": {
+            "collection": "skin-protection",
+            "imageLoad": "lazy"
+          }
+        },
+        "image_iawzQf": {
+          "type": "image",
+          "settings": {
+            "collection": "2024-womens-swimwear",
+            "imageLoad": "lazy"
+          }
+        },
+        "image_zEBKXX": {
+          "type": "image",
+          "settings": {
+            "collection": "footwear",
+            "imageLoad": "lazy"
+          }
+        },
+        "image_rgiGrY": {
+          "type": "image",
+          "settings": {
+            "collection": "surf-boards",
+            "imageLoad": "lazy"
+          }
+        }
+      },
+      "block_order": [
+        "image_QPnMgW",
+        "image_iawzQf",
+        "image_zEBKXX",
+        "image_rgiGrY"
+      ],
+      "settings": {
+        "heading": "heading",
+        "headingOrientation": "center"
+      }
+    },
+    "faq_4bMqzb": {
+      "type": "faq",
+      "blocks": {
+        "question_wXTxj3": {
+          "type": "question",
+          "settings": {
+            "question": "do we sheep wuorld wide?",
+            "answer": "maybe."
+          }
+        },
+        "question_XKNNbt": {
+          "type": "question",
+          "settings": {
+            "question": "where is the bat room?",
+            "answer": "what???"
+          }
+        }
+      },
+      "block_order": [
+        "question_wXTxj3",
+        "question_XKNNbt"
+      ],
+      "settings": {
+        "headline": "FAQ"
+      }
+    },
     "category_spotlight_yfQXgq": {
       "type": "category-spotlight",
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1",
         "collection": "2024-womens-swimwear",
         "heading": "Your collection",
         "collectionDescription": "Use this section to easily call attention to one of your collections. We'll show photos of the first 2 products.",
@@ -252,10 +253,10 @@
     }
   },
   "order": [
+    "image_banner",
+    "marquee_JMte6K",
     "image_gallery_MiwHz6",
     "faq_4bMqzb",
-    "marquee_JMte6K",
-    "image_banner",
     "category_spotlight_yfQXgq",
     "rich_text",
     "featured_collection",
