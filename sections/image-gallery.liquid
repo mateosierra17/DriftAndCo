@@ -11,7 +11,7 @@
 
   {% for block in section.blocks %}
     {% assign collection = collections[block.settings.collection] %}
-    <a href={{collection.url}}>
+    <a class="collection-url" href={{collection.url}}>
       <div class="image-gallery__image">
         <img
           class="pictures-container__picture"

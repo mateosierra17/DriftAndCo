@@ -22,6 +22,7 @@
     height: 450px;
     object-fit: cover;
     object-position: center;
+    border-radius: 0.5rem;
   }
 }
 
@@ -31,6 +32,9 @@
   text-decoration: none;
 }
 
+.collection-url {
+  text-decoration: none;
+}
 
 @media only screen and (min-width: 600px) {
   .image-gallery__pictures-container {
