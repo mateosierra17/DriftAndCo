@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Summer Is Coming",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "get ready with these amazing deals",
             "text_style": "body"
           }
         },
@@ -35,8 +35,9 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image": "shopify:\/\/shop_images\/pineapple-supply-co-SWfcRVm-o0E-unsplash.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -82,50 +83,16 @@
             "collection": "footwear",
             "imageLoad": "lazy"
           }
-        },
-        "image_rgiGrY": {
-          "type": "image",
-          "settings": {
-            "collection": "surf-boards",
-            "imageLoad": "lazy"
-          }
         }
       },
       "block_order": [
         "image_QPnMgW",
         "image_iawzQf",
-        "image_zEBKXX",
-        "image_rgiGrY"
+        "image_zEBKXX"
       ],
       "settings": {
         "heading": "heading",
         "headingOrientation": "center"
-      }
-    },
-    "faq_4bMqzb": {
-      "type": "faq",
-      "blocks": {
-        "question_wXTxj3": {
-          "type": "question",
-          "settings": {
-            "question": "do we sheep wuorld wide?",
-            "answer": "maybe."
-          }
-        },
-        "question_XKNNbt": {
-          "type": "question",
-          "settings": {
-            "question": "where is the bat room?",
-            "answer": "what???"
-          }
-        }
-      },
-      "block_order": [
-        "question_wXTxj3",
-        "question_XKNNbt"
-      ],
-      "settings": {
-        "headline": "FAQ"
       }
     },
     "category_spotlight_yfQXgq": {
@@ -138,64 +105,6 @@
         "buttonText": "Shop now",
         "buttonLink": "",
         "imageLoad": "lazy"
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "change made from code editor",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 60
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
       }
     },
     "multicolumn": {
@@ -256,10 +165,7 @@
     "image_banner",
     "marquee_JMte6K",
     "image_gallery_MiwHz6",
-    "faq_4bMqzb",
     "category_spotlight_yfQXgq",
-    "rich_text",
-    "featured_collection",
     "multicolumn"
   ]
 }
