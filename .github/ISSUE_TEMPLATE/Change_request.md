@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Change request
 about: Use this template for suggesting a Dawn enhancement
 labels: enhancement
 ---
