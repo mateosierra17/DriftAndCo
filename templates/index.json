@@ -1,7 +1,7 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "promotional_banner": {
+      "type": "promotional-banner",
       "blocks": {
         "heading": {
           "type": "heading",
@@ -107,8 +107,8 @@
         "imageLoad": "lazy"
       }
     },
-    "image_banner_bAGzaM": {
-      "type": "image-banner",
+    "promotional_banner_bAGzaM": {
+      "type": "promotional-banner",
       "blocks": {
         "heading_NtpAQ7": {
           "type": "heading",
@@ -210,11 +210,11 @@
     }
   },
   "order": [
-    "image_banner",
+    "promotional_banner",
     "marquee_JMte6K",
     "image_gallery_MiwHz6",
     "category_spotlight_yfQXgq",
-    "image_banner_bAGzaM",
+    "promotional_banner_bAGzaM",
     "multicolumn"
   ]
 }
