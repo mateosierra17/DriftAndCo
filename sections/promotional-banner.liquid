@@ -8,14 +8,14 @@
     height={{ section.settings.image.height }}
     width={{ section.settings.image.width }}>
   {% assign color_scheme = section.settings.color_scheme.settings %}
-  <div class="banner__content" style="color: {{ color_scheme.text }};
+  <div class="banner__content" style="color: {{ color_scheme.Text }};
   background-color: {{ color_scheme.background  }};">
     {% for block in section.blocks %}
       {% if block.type == "heading" %}
-        <h1 style="color: {{ color_scheme.settings.text }};">{{ block.settings.heading }}</h1>
+        <h1 style="color: {{ color_scheme.text }};">{{ block.settings.heading }}</h1>
       {% endif %}
       {% if block.type == "text" %}
-        <h1 style="color: {{ color_scheme.settings.text }};">{{ block.settings.text }}</h1>
+        <h1 style="color: {{ color_scheme.text }};">{{ block.settings.text }}</h1>
       {% endif %}
       {% if block.type == "buttons" %}
         {% if block.settings.button_label_1 != "" %}
