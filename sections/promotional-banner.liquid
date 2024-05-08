@@ -13,13 +13,14 @@
     alt=""
     height={{ section.settings.image.height }}
     width={{ section.settings.image.width }}>
-  <div class="banner__content">
+  {% assign color_scheme = section.settings.color_scheme %}
+  <div class="banner__content" style="color: {{ color_scheme.settings.text }}; background-color: {{ color_scheme.background }}">
     {% for block in section.blocks %}
       {% if block.type == "heading" %}
-        <h1>{{ block.settings.heading }}</h1>
+        <h1 style="color: {{ color_scheme.settings.text }};">{{ block.settings.heading }}</h1>
       {% endif %}
       {% if block.type == "text" %}
-        <h1>{{ block.settings.text }}</h1>
+        <h1 style="color: {{ color_scheme.settings.text }};">{{ block.settings.text }}</h1>
       {% endif %}
       {% if block.type == "buttons" %}
         {% if block.settings.button_label_1 != "" %}
@@ -31,6 +32,9 @@
       {% endif %}
     {% endfor %}
   </div>
+  <script>
+    console.log(" {{ section.settings.color_scheme.settings.text }} ")
+  </script>
 </div>
 
 {% schema %}
@@ -46,11 +50,6 @@
         "type": "image_picker",
         "id": "image",
         "label": "t:sections.image-banner.settings.image.label"
-      },
-      {
-        "type": "image_picker",
-        "id": "image_2",
-        "label": "t:sections.image-banner.settings.image_2.label"
       },
       {
         "type": "range",
