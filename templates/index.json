@@ -1,7 +1,7 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "promotional_banner": {
+      "type": "promotional-banner",
       "blocks": {
         "heading": {
           "type": "heading",
@@ -95,8 +95,8 @@
         "headingOrientation": "center"
       }
     },
-    "category_spotlight_yfQXgq": {
-      "type": "category-spotlight",
+    "collection_spotlight_yfQXgq": {
+      "type": "collection-spotlight",
       "settings": {
         "color_scheme": "scheme-1",
         "collection": "2024-womens-swimwear",
@@ -107,8 +107,8 @@
         "imageLoad": "lazy"
       }
     },
-    "image_banner_bAGzaM": {
-      "type": "image-banner",
+    "promotional_banner_bAGzaM": {
+      "type": "promotional-banner",
       "blocks": {
         "heading_NtpAQ7": {
           "type": "heading",
@@ -120,7 +120,7 @@
         "text_6TdJ7L": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Give customers details",
             "text_style": "body"
           }
         },
@@ -142,7 +142,7 @@
         "buttons_DpNbEj"
       ],
       "settings": {
-        "image_2": "shopify:\/\/shop_images\/angelina-litvin--uwPMTAxTig-unsplash.jpg",
+        "image": "shopify:\/\/shop_images\/angelina-litvin--uwPMTAxTig-unsplash.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -210,11 +210,11 @@
     }
   },
   "order": [
-    "image_banner",
+    "promotional_banner",
     "marquee_JMte6K",
     "image_gallery_MiwHz6",
-    "category_spotlight_yfQXgq",
-    "image_banner_bAGzaM",
+    "collection_spotlight_yfQXgq",
+    "promotional_banner_bAGzaM",
     "multicolumn"
   ]
 }

@@ -1,0 +1,210 @@
+{{ 'section-promotional-banner.css' | asset_url | stylesheet_tag }}
+
+<div id="Banner-{{ section.id }}" class="banner">
+  <img
+    class="banner__media"
+    src={{ section.settings.image.src | image_url}}
+    alt=""
+    height={{ section.settings.image.height }}
+    width={{ section.settings.image.width }}>
+  {% assign color_scheme = section.settings.color_scheme.settings %}
+  <div class="banner__content" style="color: {{ color_scheme.Text }};
+  background-color: {{ color_scheme.background  }};">
+    {% for block in section.blocks %}
+      {% if block.type == "heading" %}
+        <h1 style="color: {{ color_scheme.text }};">{{ block.settings.heading }}</h1>
+      {% endif %}
+      {% if block.type == "text" %}
+        <h1 style="color: {{ color_scheme.text }};">{{ block.settings.text }}</h1>
+      {% endif %}
+      {% if block.type == "buttons" %}
+        {% if block.settings.button_label_1 != "" %}
+          <a class=".button">{{ block.settings.button_label_1 }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.image-banner.name",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.image-banner.settings.mobile.content"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image-banner.settings.image.label"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.animation.content"
+      },
+      {
+        "type": "select",
+        "id": "image_behavior",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.all.animation.image_behavior.options__1.label"
+          },
+          {
+            "value": "ambient",
+            "label": "t:sections.all.animation.image_behavior.options__2.label"
+          },
+          {
+            "value": "fixed",
+            "label": "t:sections.all.animation.image_behavior.options__3.label"
+          },
+          {
+            "value": "zoom-in",
+            "label": "t:sections.all.animation.image_behavior.options__4.label"
+          }
+        ],
+        "default": "none",
+        "label": "t:sections.all.animation.image_behavior.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.image-banner.blocks.heading.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              },
+              {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              },
+              {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "t:sections.image-banner.blocks.text.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "text",
+            "default": "Give customers details about the banner image(s) or content on the template.",
+            "label": "t:sections.image-banner.blocks.text.settings.text.label"
+          },
+          {
+            "type": "select",
+            "id": "text_style",
+            "options": [
+              {
+                "value": "body",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+              },
+              {
+                "value": "subtitle",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+              },
+              {
+                "value": "caption-with-letter-spacing",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+              }
+            ],
+            "default": "body",
+            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+          }
+        ]
+      },
+      {
+        "type": "buttons",
+        "name": "t:sections.image-banner.blocks.buttons.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          },
+          {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary_1",
+            "default": false,
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
+          },
+          {
+            "type": "url",
+            "id": "button_link_2",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary_2",
+            "default": false,
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.image-banner.presets.name",
+        "blocks": [
+          {
+            "type": "heading"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "buttons"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
