@@ -1,7 +1,7 @@
 ---
-name: Feature request
+name: section request
 about: Use this template for suggesting a Dawn enhancement
-labels: enhancement
+labels: new_section
 ---
 
 ## Describe the enhancement you'd like
