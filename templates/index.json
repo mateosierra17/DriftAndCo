@@ -89,7 +89,40 @@
     },
     "carousel_UHx3H3": {
       "type": "carousel",
+      "blocks": {
+        "product_zNe6nE": {
+          "type": "product",
+          "settings": {
+            "product": "mangroove-bikini"
+          }
+        },
+        "product_Yb7ygm": {
+          "type": "product",
+          "settings": {
+            "product": "blue-swimsuit"
+          }
+        },
+        "product_L8UpCa": {
+          "type": "product",
+          "settings": {
+            "product": "black-one-piece-swimsuit"
+          }
+        },
+        "product_HpB9Hf": {
+          "type": "product",
+          "settings": {
+            "product": "kenia-one-piece-swimsuit"
+          }
+        }
+      },
+      "block_order": [
+        "product_zNe6nE",
+        "product_Yb7ygm",
+        "product_L8UpCa",
+        "product_HpB9Hf"
+      ],
       "settings": {
+        "heading": "add a heading"
       }
     },
     "collection_spotlight_yfQXgq": {
