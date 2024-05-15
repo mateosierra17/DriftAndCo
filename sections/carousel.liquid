@@ -1,4 +1,12 @@
-<h1 id="{{ section.id }}">carousel</h1>
+{% assign settings = section.settings %}
+
+<h1 id="{{ section.id }}">{{ settings.heading }}</h1>
+
+<section class="carousel">
+  {% for block in section.blocks %}
+    <h1>{{ block.settings.product.title }}</h1>
+  {% endfor %}
+</section>
 
 {% schema %}
   {
@@ -10,6 +18,26 @@
         "name": "carousel"
       }
     ],
-    "settings": []
+    "settings": [
+      {
+        "type": "text",
+        "label": "Heading",
+        "default": "add a heading",
+        "id": "heading"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Carousel-Product",
+        "type": "product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "product"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
