@@ -36,16 +36,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/pineapple-supply-co-SWfcRVm-o0E-unsplash.jpg",
-        "image_overlay_opacity": 20,
-        "image_height": "medium",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "image_behavior": "none"
       }
     },
     "marquee_JMte6K": {
@@ -93,6 +85,11 @@
       "settings": {
         "heading": "heading",
         "headingOrientation": "center"
+      }
+    },
+    "carousel_UHx3H3": {
+      "type": "carousel",
+      "settings": {
       }
     },
     "collection_spotlight_yfQXgq": {
@@ -143,16 +140,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/angelina-litvin--uwPMTAxTig-unsplash.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image_behavior": "none"
       }
     },
     "multicolumn": {
@@ -213,6 +202,7 @@
     "promotional_banner",
     "marquee_JMte6K",
     "image_gallery_MiwHz6",
+    "carousel_UHx3H3",
     "collection_spotlight_yfQXgq",
     "promotional_banner_bAGzaM",
     "multicolumn"
