@@ -1,17 +1,44 @@
+{{ 'section-carousel.css' | asset_url | stylesheet_tag }}
+
+
 {% assign settings = section.settings %}
 
-<h1 id="{{ section.id }}">{{ settings.heading }}</h1>
+<section class="carousel-header">
+  <h1 style="font-weight: 800; font-size: 3.5rem;" id="{{ section.id }}">{{ settings.heading }}</h1>
+
+  {% if settings.show_button == true %}
+    <a
+      style="font-weight: 600;"
+      href="{{ settings.button_url }}"
+      class="button">{{ settings.button_text }}</a>
+  {% endif %}
+</section>
 
 <section class="carousel">
   {% for block in section.blocks %}
-    <h1>{{ block.settings.product.title }}</h1>
+    {% assign product = block.settings.product %}
+    {% assign media = product.media | first %}
+    <a style="text-decoration: none;" href="{{ product.url }}">
+      <article class="carousel__product">
+        <img
+          src="{{ media.src |  img_url: '1000x1000' }}"
+          height="500"
+          width="500"
+          alt="">
+        <div class="carousel__product-info">
+          <h3>{{ product.title }}</h3>
+          <p>${{ product.price }}</p>
+        </div>
+      </article>
+    </a>
+
   {% endfor %}
 </section>
 
 {% schema %}
   {
     "name": "carousel",
-    "class": "carousel",
+    "class": "section-carousel",
     "tag": "section",
     "presets": [
       {
@@ -22,10 +49,28 @@
       {
         "type": "text",
         "label": "Heading",
-        "default": "add a heading",
+        "default": "Add a heading",
         "id": "heading"
+      },
+      {
+        "type": "text",
+        "label": "top button text",
+        "id": "button_text",
+        "default": "View all"
+      },
+      {
+        "type": "url",
+        "label": "top button url",
+        "id": "button_url"
+      },
+      {
+        "type": "checkbox",
+        "label": "Show top button button",
+        "id": "show_button",
+        "default": true
       }
     ],
+    "max_blocks": 4,
     "blocks": [
       {
         "name": "Carousel-Product",
