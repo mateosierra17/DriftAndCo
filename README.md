@@ -4,6 +4,12 @@
 
 Shopify theme made from forking Shopify's dawn theme 
 
+### features
+
+- [x] Highly customuzable
+- [x] Responsive, Mobile friendly
+- [ ] High performance score
+
 ### 🛠️ Built with 🛠️ 
 
 - HTML
@@ -11,3 +17,4 @@ Shopify theme made from forking Shopify's dawn theme
 - Javascript
 - Shopify CLI
 - Liquid
+
