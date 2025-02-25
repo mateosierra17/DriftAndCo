@@ -1,13 +1,21 @@
 {
   "editor.formatOnSave": false,
   "[javascript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.formatOnSave": true
   },
   "[liquid]": {
+<<<<<<< HEAD
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "sissel.shopify-liquid"
   }
+=======
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
+  },
+  "themeCheck.checkOnSave": true
+>>>>>>> a3b5e98ce520328f71c4c76d6d7014da6231b92a
 }
