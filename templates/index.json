@@ -12,7 +12,13 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
-        "heading": { "type": "heading", "settings": { "heading": "Browse our latest products", "heading_size": "h0" } },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -25,7 +31,10 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "image": "shopify://shop_images/HERO.webp",
         "image_overlay_opacity": 50,
@@ -40,25 +49,73 @@
         "show_text_below": false
       }
     },
+    "rich_text_Txzpzq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jYjimf": {
+          "type": "heading",
+          "settings": {
+            "heading": "connected!",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jYjimf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_product_FHcLcm": {
       "type": "featured-product",
       "blocks": {
         "text_fyWDFt": {
           "type": "text",
-          "settings": { "text": "{{ section.settings.product.vendor }}", "text_style": "uppercase" }
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
         },
-        "title_bh9byJ": { "type": "title", "settings": { "heading_size": "h1" } },
-        "price_KUgfwn": { "type": "price", "settings": {} },
+        "title_bh9byJ": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_KUgfwn": {
+          "type": "price",
+          "settings": {}
+        },
         "variant_picker_GcdzRL": {
           "type": "variant_picker",
-          "settings": { "picker_type": "button", "swatch_shape": "circle" }
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
         },
-        "quantity_selector_Fkg3PJ": { "type": "quantity_selector", "settings": {} },
+        "quantity_selector_Fkg3PJ": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "buy_buttons_dDaX7q": {
           "type": "buy_buttons",
-          "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": true }
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
         },
-        "share_8HBGJN": { "type": "share", "settings": { "share_label": "Share" } }
+        "share_8HBGJN": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
       },
       "block_order": [
         "text_fyWDFt",
@@ -117,15 +174,28 @@
       "blocks": {
         "featured_collection_UTQwxF": {
           "type": "featured_collection",
-          "settings": { "collection": "men-s-tops-everyday-style-comfort" }
+          "settings": {
+            "collection": "men-s-tops-everyday-style-comfort"
+          }
         },
-        "featured_collection_XnXrft": { "type": "featured_collection", "settings": { "collection": "womens-tops" } },
+        "featured_collection_XnXrft": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-tops"
+          }
+        },
         "featured_collection_WYaxB6": {
           "type": "featured_collection",
-          "settings": { "collection": "on-sale-limited-time-deals-on-your-favorites" }
+          "settings": {
+            "collection": "on-sale-limited-time-deals-on-your-favorites"
+          }
         }
       },
-      "block_order": ["featured_collection_UTQwxF", "featured_collection_XnXrft", "featured_collection_WYaxB6"],
+      "block_order": [
+        "featured_collection_UTQwxF",
+        "featured_collection_XnXrft",
+        "featured_collection_WYaxB6"
+      ],
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
@@ -140,5 +210,11 @@
       }
     }
   },
-  "order": ["image_banner", "featured_product_FHcLcm", "featured_collection", "collection_list_wke6VX"]
+  "order": [
+    "image_banner",
+    "rich_text_Txzpzq",
+    "featured_product_FHcLcm",
+    "featured_collection",
+    "collection_list_wke6VX"
+  ]
 }
