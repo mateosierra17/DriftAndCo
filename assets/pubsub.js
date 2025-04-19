@@ -16,8 +16,8 @@ function subscribe(eventName, callback) {
 
 function publish(eventName, data) {
   if (subscribers[eventName]) {
-    const promises = subscribers[eventName]
-      .map((callback) => callback(data))
-    return Promise.all(promises);
+    subscribers[eventName].forEach((callback) => {
+      callback(data);
+    });
   }
 }

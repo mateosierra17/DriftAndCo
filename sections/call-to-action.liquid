@@ -1,0 +1,37 @@
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_announcement",
+        "label": "Show announcement",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      },
+    ],
+    "presets": [
+    	{
+    	"name": "Call to Action",
+    	"category": "Promotional"
+    	}
+    ]
+  }
+{% endschema %}
+{{ 'custom.css' | asset_url | stylesheet_tag }}
+<div>
+  <h2 class="collection-title">{{ section.settings.title }}</h2>
+  The new {{ collection.title }}
+  <p>
+    {{ section.settings.description }}
+  </p>
+</div>
