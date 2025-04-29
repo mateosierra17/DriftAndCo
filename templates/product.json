@@ -41,11 +41,10 @@
         "concepto_app_cuotas_star_rating_76fN4m": {
           "type": "shopify://apps/concepto-app-cuotas/blocks/star_rating/7f7911db-ffd6-49bc-bb46-bac76d6281eb",
           "settings": {
-            "product": "{{product}}",
-            "colour": "#ff0000",
+            "colour": "#787878",
             "background_color": "#ff0000",
             "icon": "shopify://shop_images/mercadopago.svg",
-            "cta_text": "<p>negro</p>"
+            "cta_text": "texto de prueba"
           }
         },
         "buy_buttons": {
