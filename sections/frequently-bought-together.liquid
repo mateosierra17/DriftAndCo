@@ -1,10 +1,34 @@
-<h1>purchased together</h1>
+{{ settings = section.settings }}
+
+<h1>purchased together {{ settings.text }}</h1>
+
 
 {% schema %}
   {
-    "name": "frequently bought",
+    "name": "frequently-bought",
+    "tag": "section",
+    "class": "frequently-bought-together",
     "limit": 1,
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Slideshow"
+      }
+    ],
+    "default": {
+    "settings": {
+      "title": "Slideshow"
+    },
+    "blocks": [
+      {
+        "type": "slide"
+      },
+      {
+        "type": "slide"
+      }
+    ]
+  },
     "enabled_on": {
       "templates": ["product"]
     }
