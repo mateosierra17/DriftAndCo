@@ -43,8 +43,9 @@
           "settings": {
             "product": "{{product}}",
             "colour": "#ff0000",
+            "background_color": "#ff0000",
             "icon": "shopify://shop_images/mercadopago.svg",
-            "cta_text": ""
+            "cta_text": "<p>negro</p>"
           }
         },
         "buy_buttons": {
